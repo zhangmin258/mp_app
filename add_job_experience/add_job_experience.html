@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-添加工作经历</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.dtpicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.picker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.poppicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/add_job_experience.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">添加工作经历</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <form>
+			<section>
+				<span>公司名称</span>
+				<input type="text" placeholder="请输入公司名称" dir="rtl" id="company_name"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>岗位名称</span>
+				<input type="text" placeholder="请输入岗位名称" dir="rtl" id="job_name"/>
+				<i class="icon-angle-right"></i>
+			</section>
+	
+			
+			<section>
+				<span>起始时间</span>
+				<input type="text" placeholder="请选择" dir="rtl" readonly="readonly" id="start_time"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>结束时间</span>
+				<input type="text" placeholder="请选择" dir="rtl" readonly="readonly" id="end_time"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<p class="job_description">职位描述</p>
+			<textarea></textarea>
+			<em><b>0</b>/300</em>
+			
+		
+			<input type="button" class="btn　btn-warning" value="保存" id="save">
+		</form>
+	</div>
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.picker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.dtpicker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/add_job_experience.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		
+	</script>
+</body>
+</html>

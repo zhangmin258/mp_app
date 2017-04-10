@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-注册</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">注册秒前程</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <form action="">
+			<div class="group clearfix">
+				<span><i class="icon-mobile-phone"></i></span>
+				<input type="text" name="phone_number" id="phone_number" placeholder="请输入手机号">
+			</div>
+	                                                                                                                                                                                                                                                                                    
+			<div class="group clearfix yzm">
+				<span><i class="icon-qrcode"></i></span>
+				<input type="text" name="auth_code" id="auth_code" placeholder="请输入验证码">
+				<input type="button" class="btn" value="获取验证码" id="gain" onclick="settime(this)" />
+			</div>
+			
+			<div class="group clearfix">
+				<span><i class="icon-lock"></i></span>
+				<input type="password" name="pass" id="pass" placeholder="请输入密码">
+			</div>
+			
+			<div class="group clearfix">
+				<span><i class="icon-lock"></i></span>
+				<input type="password" name="confirm_pass" id="confirm_pass" placeholder="请确认密码">
+			</div>
+			
+			<p class="clearfix">
+				<button type="button">个人求职</button>
+				<button type="button">企业招聘</button>
+			</p>
+			<input type="button" class="btn btn-warning" value="注册" id="reg">
+			<p class="ps">注册即视为同意<<<a href="javascript:void(0)">秒前程用户协议</a>>></p>
+		</form>
+	</div>
+
+	<div style="clear: both; height: 3.41rem;"></div>
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../layer/layer.js"></script>
+	<script type="text/javascript" src="js/reg.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	//获取手机验证码
+    var countdown=60; 
+    function settime(obj) { 
+        if (countdown == 0) { 
+            obj.removeAttribute("disabled");    
+            obj.value="获取验证码"; 
+            countdown = 60; 
+            return;
+        } else { 
+            obj.setAttribute("disabled",true); 
+            obj.value="重新发送(" + countdown + ")"; 
+            countdown--; 
+        }
+        setTimeout(function(){
+            settime(obj);
+        },1000);
+    }
+	
+</script>

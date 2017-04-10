@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-邀请面试简历</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/invited_interview.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">邀请面试</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <div id="hot_talent">
+			<div class="info">
+				<div class="left"><img src="images/tab.png" alt=""></div>
+				<div class="center">
+					<h3>冬苋菜</h3>
+					<p>PHP工程师</p>
+					<p><span>杭州市-江干区</span>&nbsp;&nbsp;<span>1-3年</span>&nbsp;&nbsp;<span>本科</span></p>
+				</div>
+				<div class="right">
+					<h3>8K-15k</h3>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left"><img src="images/tab.png" alt=""></div>
+				<div class="center">
+					<h3>冬苋菜</h3>
+					<p>PHP工程师</p>
+					<p><span>杭州市-江干区</span>&nbsp;&nbsp;<span>1-3年</span>&nbsp;&nbsp;<span>本科</span></p>
+				</div>
+				<div class="right">
+					<h3>8K-15k</h3>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left"><img src="images/tab.png" alt=""></div>
+				<div class="center">
+					<h3>冬苋菜</h3>
+					<p>PHP工程师</p>
+					<p><span>杭州市-江干区</span>&nbsp;&nbsp;<span>1-3年</span>&nbsp;&nbsp;<span>本科</span></p>
+				</div>
+				<div class="right">
+					<h3>8K-15k</h3>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left"><img src="images/tab.png" alt=""></div>
+				<div class="center">
+					<h3>冬苋菜</h3>
+					<p>PHP工程师</p>
+					<p><span>杭州市-江干区</span>&nbsp;&nbsp;<span>1-3年</span>&nbsp;&nbsp;<span>本科</span></p>
+				</div>
+				<div class="right">
+					<h3>8K-15k</h3>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left"><img src="images/tab.png" alt=""></div>
+				<div class="center">
+					<h3>冬苋菜</h3>
+					<p>PHP工程师</p>
+					<p><span>杭州市-江干区</span>&nbsp;&nbsp;<span>1-3年</span>&nbsp;&nbsp;<span>本科</span></p>
+				</div>
+				<div class="right">
+					<h3>8K-15k</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/invited_interview.js"></script>
+	<script type="text/javascript">
+//		mui.init();
+		$(function(){
+			//预览简历
+			$('.info').bind('tap',function(){
+				mui.openWindow({
+					url: '../resume_preview/resume_preview.html',
+					id: '../resume_preview/resume_preview.html',  
+					 show: {
+	    				duration: 300
+					},
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+		});
+	</script>
+</body>
+</html>

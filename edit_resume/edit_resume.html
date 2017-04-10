@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-编辑简历</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/edit_resume.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">编辑简历</h1>
+	</header>
+
+	<div class="mui-content">
+	    <div id="user_info" class="link">
+			<img src="images/personal.png" alt="" />
+			<div class="info">
+				<h2>冬苋菜</h2>
+				<p><span>男</span>/<span>1年工作经验</span>/<span>杭州</span></p>
+				<i class="icon-angle-right"></i>
+			</div>
+		</div>
+	
+		<div id="job_intention" class="link">
+			<h2>求职意向</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="education_experience" class="link">
+			<h2>教育经历</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="job_experience" class="link">
+			<h2>工作经历</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="self_evaluation" class="link">
+			<h2>自我评价</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="resume_preview" class="link">
+			<h2>预览简历</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="shield_company" class="link">
+			<h2>屏蔽公司</h2>
+			<i class="icon-angle-right"></i>
+		</div>
+		
+		<div id="hide_resume" class="link">
+			<h2>隐藏简历</h2>
+			<div class="mui-switch mui-active switch">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/edit_resume.js"></script>
+	<script type="text/javascript">
+		
+		//打开新页面
+		//头像
+		$('#user_info').bind('tap',function(){
+			mui.openWindow({
+				url: '../edit_basicinfor/edit_basicinfor.html',
+				id: '../edit_basicinfor/edit_basicinfor.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+		//求职意向
+		$('#job_intention').bind('tap',function(){
+			mui.openWindow({
+				url: '../edit_objective/edit_objective.html',
+				id: '../edit_objective/edit_objective.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+		//教育经历
+		$('#education_experience').bind('tap',function(){
+			mui.openWindow({
+				url: '../edit_education_experience/edit_education_experience.html',
+				id: '../edit_education_experience/edit_education_experience.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+		//工作经历
+		$('#job_experience').bind('tap',function(){
+			mui.openWindow({
+				url: '../edit_job_experience/edit_job_experience.html',
+				id: '../edit_job_experience/edit_job_experience.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		//自我评价
+		$('#self_evaluation').bind('tap',function(){
+			mui.openWindow({
+				url: '../edit_self_evaluation/edit_self_evaluation.html',
+				id: '../edit_self_evaluation/edit_self_evaluation.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		//预览简历
+		$('#resume_preview').bind('tap',function(){
+			mui.openWindow({
+				url: '../resume_preview/resume_preview.html',
+				id: '../resume_preview/resume_preview.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+		//屏蔽公司
+		$('#shield_company').bind('tap',function(){
+			mui.openWindow({
+				url: '../shield_company/shield_company.html',
+				id: '../shield_company/shield_company.html',  
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+		
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>

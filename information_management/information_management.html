@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-信息管理</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.dtpicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.picker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.poppicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/information_management.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">完善信息</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <form action="">
+	    	<section>
+				<span>公司名称</span>
+				<input type="text" placeholder="请输入" dir="rtl" id="company_name"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>公司行业</span>
+				<input type="text" placeholder="请选择" dir="rtl" readonly="readonly" id="company_industry"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>公司性质</span>
+				<input type="text" placeholder="请选择" dir="rtl" readonly="readonly" id="company_nature"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section style="margin-bottom: 1.54rem;">
+				<span>公司官网</span>
+				<input type="text" placeholder="请输入" dir="rtl" id="company_website"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>公司介绍</span>
+				<input type="text" dir="rtl" readonly="readonly" id="company_introduction"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>公司电话</span>
+				<input type="text" placeholder="请输入" dir="rtl" id="company_phone"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section dir="rtl" id="company_size">
+				<span>公司规模</span>
+				<select>
+					<option value="1">不限</option>
+					<option value="2">少于50人</option>
+					<option value="3">50-150人</option>
+					<option value="4">150-500人</option>
+					<option value="5">500-1000人</option>
+					<option value="6">1000-5000人</option>
+					<option value="7">5000-10000人</option>
+					<option value="8">10000人以上</option>
+				</select>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>公司地址</span>
+				<input type="text" dir="rtl" readonly="readonly" id="company_address"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section style="margin-bottom: 1.54rem;">
+				<span>详细地址</span>
+				<input type="text" dir="rtl" placeholder="请输入" id="detailed_address"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>联系人</span>
+				<input type="text" dir="rtl" placeholder="请输入" id="user"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section style="margin-bottom: 1.54rem;">
+				<span>联系人电话</span>
+				<input type="text" dir="rtl" placeholder="请输入" id="user_phone"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section class="button">
+				<input type="button" class="btn" value="保存" id="save" />
+			</section>
+	    </form>
+	</div>
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.dtpicker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.picker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../public_js/company_nature.js"></script>
+	<script type="text/javascript" src="../public_js/city.data-3.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/information_management.js"></script>
+	<script type="text/javascript">
+//		mui.init();
+
+		//公司行业
+		$('#company_industry').bind('tap',function(){
+			mui.openWindow({
+				url: '../industry_category/industry_category.html',
+				id: '../industry_category/industry_category.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//公司介绍
+		$('#company_introduction').bind('tap',function(){
+			mui.openWindow({
+				url: '../company_introduction/company_introduction.html',
+				id: '../company_introduction/company_introduction.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//职位诱惑
+		$('#position_temptation').bind('tap',function(){
+			mui.openWindow({
+				url: '../position_temptation/position_temptation.html',
+				id: '../position_temptation/position_temptation.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		//职位描述
+		$('#position_description').bind('tap',function(){
+			mui.openWindow({
+				url: '../position_description/position_description.html',
+				id: '../position_description/position_description.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		
+	</script>
+</body>
+</html>

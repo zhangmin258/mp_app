@@ -1,0 +1,1183 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H5F5F95F8",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "mp_app",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "shouye/shouye.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+         "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        },
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+			},
+			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": ""
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"shouye/shouye.html": {
+				"resources": [
+					"shouye/images/logo-white.png",
+					"shouye/js/shouye.js",
+					"shouye/images/logo_bottom_white.png",
+					"shouye/images/tab.png",
+					"public_js/jquery.min.js",
+					"shouye/images/logo_bottom.png",
+					"shouye/images/logo.png",
+					"shouye/images/download-2.png",
+					"shouye/css/shouye.css",
+					"shouye/images/shuaxinjianli.png",
+					"shouye/images/top_bg.gif",
+					"shouye/images/jianli.png",
+					"shouye/images/toudixiang.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"shouye/images/sousuozhiwei.png",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"shouye/images/download.png",
+					"public_js/bootstrap.min.js",
+					"login/login.html",
+					"position_details/position_details.html",
+					"edit_resume/edit_resume.html",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"cityList/cityList.html"
+				],
+				"refer": [
+					"job_search/job_search.html",
+					"delivery_box/delivery_box.html"
+				],
+				"priority": 0
+			},
+			"login/login.html": {
+				"resources": [
+					"login/images/logo_bottom.png",
+					"login/css/login.css",
+					"login/images/back.png",
+					"login/js/login.js",
+					"shouye/shouye.html",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"layer/skin/layer.css",
+					"layer/layer.js",
+					"layer/skin/default/icon.png",
+					"reg/reg.html",
+					"find_password/find_password.html",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"fonts/mui.ttf",
+					"job_search/job_search.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"reg/reg.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"layer/skin/layer.css",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"reg/js/reg.js",
+					"layer/layer.js",
+					"public_js/bootstrap.min.js",
+					"reg/images/logo_bottom.png",
+					"reg/css/reg.css",
+					"reg/images/back.png",
+					"layer/skin/default/icon.png",
+					"shouye/shouye.html",
+					"login/login.html",
+					"reg/reg.html",
+					"public_css/mui.min.css",
+					"public_js/mui.min.js",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"find_password/find_password.html": {
+				"resources": [
+					"find_password/images/back.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"layer/skin/layer.css",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"layer/layer.js",
+					"public_js/bootstrap.min.js",
+					"find_password/images/logo_bottom.png",
+					"find_password/css/find_password.css",
+					"find_password/js/find_password.js",
+					"login/login.html",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"job_search/job_search.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"job_search/images/logo-white.png",
+					"job_search/images/shuaxinjianli.png",
+					"job_search/images/toudixiang.png",
+					"job_search/images/download.png",
+					"job_search/images/logo_bottom_white.png",
+					"job_search/images/logo.png",
+					"job_search/images/jianli.png",
+					"job_search/images/logo_bottom.png",
+					"job_search/images/sousuozhiwei.png",
+					"job_search/images/download-2.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"job_search/images/tab.png",
+					"public_js/bootstrap.min.js",
+					"job_search/css/job_search.css",
+					"job_search/js/job_search.js",
+					"job_search/images/top_bg.gif",
+					"shouye/shouye.html",
+					"job_search/images/on_1.png",
+					"job_search/images/on_2.png",
+					"position_details/position_details.html",
+					"login/login.html",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"edit_resume/edit_resume.html"
+				],
+				"priority": 0
+			},
+			"position_details/position_details.html": {
+				"resources": [
+					"position_details/css/position_details.css",
+					"public_js/jquery.min.js",
+					"position_details/images/logo.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"position_details/images/tab.png",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"position_details/js/position_details.js",
+					"public_js/bootstrap.min.js",
+					"position_details/images/on_1.png",
+					"position_details/images/back.png",
+					"job_search/job_search.html",
+					"position_details/images/link.png",
+					"position_details/images/company_logo.png",
+					"shouye/shouye.html",
+					"position_details/images/logo_bottom.png",
+					"company_details/company_details.html",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"reg/reg.html",
+					"find_password/find_password.html",
+					"edit_resume/edit_resume.html"
+				],
+				"priority": 0
+			},
+			"company_details/company_details.html": {
+				"resources": [
+					"company_details/images/link.png",
+					"public_js/jquery.min.js",
+					"company_details/images/logo_bottom.png",
+					"company_details/images/back.png",
+					"company_details/images/company_logo.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"company_details/css/company_details.css",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"company_details/js/company_details.js",
+					"company_details/images/tab.png",
+					"position_details/position_details.html",
+					"company_details/images/company_logoo.png",
+					"public_css/mui.min.css",
+					"public_js/mui.min.js",
+					"company_details/images/team-1.jpg",
+					"company_details/images/team-2.jpg",
+					"company_details/images/team-3.jpg",
+					"company_details/images/team-4.jpg",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"delivery_box/delivery_box.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"delivery_box/images/tab.png",
+					"delivery_box/images/back.png",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"delivery_box/images/logo_bottom.png",
+					"public_css/mui.min.css",
+					"delivery_box/js/delivery_box.js",
+					"delivery_box/css/delivery_box.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"resume_preview/resume_preview.html": {
+				"resources": [
+					"resume_preview/images/back.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"resume_preview/images/logo_bottom.png",
+					"resume_preview/js/resume_preview.js",
+					"resume_preview/css/resume_preview.css",
+					"resume_preview/images/user.png",
+					"shouye/shouye.html",
+					"edit_resume/edit_resume.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"edit_resume/edit_resume.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"edit_resume/images/back.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"edit_resume/images/user.png",
+					"public_css/mui.min.css",
+					"edit_resume/images/logo_bottom.png",
+					"edit_resume/css/edit_resume.css",
+					"edit_resume/js/edit_resume.js",
+					"shouye/shouye.html",
+					"edit_resume/images/right.png",
+					"edit_resume/images/personal.png",
+					"resume_preview/resume_preview.html",
+					"edit_basicinfor/edit_basicinfor.html",
+					"edit_objective/edit_objective.html",
+					"edit_education_experience/edit_education_experience.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"edit_job_experience/edit_job_experience.html",
+					"edit_self_evaluation/edit_self_evaluation.html",
+					"shield_company/shield_company.html"
+				],
+				"priority": 0
+			},
+			"edit_basicinfor/edit_basicinfor.html": {
+				"resources": [
+					"edit_basicinfor/images/logo_bottom.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"edit_basicinfor/images/back.png",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"edit_basicinfor/images/personal.png",
+					"public_js/mui.min.js",
+					"edit_basicinfor/css/edit_basicinfor.css",
+					"public_css/mui.min.css",
+					"edit_resume/edit_resume.html",
+					"edit_basicinfor/images/touxiang.png",
+					"edit_basicinfor/js/edit_basicinfor.js",
+					"fonts/mui.ttf",
+					"public_css/mui.dtpicker.css",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"public_js/city.data-3.js",
+					"public_js/mui.poppicker.js",
+					"public_js/mui.dtpicker.js",
+					"public_js/mui.picker.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"edit_objective/edit_objective.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"edit_resume/edit_resume.html",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"edit_objective/images/back.png",
+					"public_js/mui.min.js",
+					"public_js/city.data-3.js",
+					"public_css/mui.poppicker.css",
+					"edit_objective/css/edit_objective.css",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_js/mui.poppicker.js",
+					"public_js/mui.dtpicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"edit_objective/images/logo_bottom.png",
+					"public_js/mui.picker.js",
+					"public_css/mui.picker.css",
+					"public_css/mui.min.css",
+					"edit_objective/js/edit_objective.js",
+					"public_js/position.data.js"
+				],
+				"refer": [
+					"edit_basicinfor/edit_basicinfor.html"
+				],
+				"priority": 0
+			},
+			"edit_education_experience/edit_education_experience.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"edit_resume/edit_resume.html",
+					"public_js/jquery.min.js",
+					"edit_education_experience/images/back.png",
+					"edit_education_experience/images/logo_bottom.png",
+					"edit_education_experience/js/edit_education_experience.js",
+					"public_js/position.data.js",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"edit_education_experience/css/edit_education_experience.css",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_js/mui.poppicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.picker.js",
+					"public_css/mui.picker.css",
+					"public_css/mui.min.css",
+					"add_education_experience/add_education_experience.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"add_education_experience/add_education_experience.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"public_js/jquery.min.js",
+					"add_education_experience/css/add_education_experience.css",
+					"add_education_experience/images/back.png",
+					"public_js/position.data.js",
+					"add_education_experience/js/add_education_experience.js",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_js/mui.poppicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"add_education_experience/images/logo_bottom.png",
+					"public_js/mui.picker.js",
+					"public_css/mui.picker.css",
+					"public_css/mui.min.css",
+					"edit_education_experience/edit_education_experience.html",
+					"public_js/mui.dtpicker.js",
+					"add_education_experience/add_education_experience.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"edit_job_experience/edit_job_experience.html": {
+				"resources": [
+					"edit_job_experience/images/logo_bottom.png",
+					"public_css/mui.dtpicker.css",
+					"public_js/mui.poppicker.js",
+					"public_js/position.data.js",
+					"public_js/mui.picker.js",
+					"edit_job_experience/css/edit_education_experience.css",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"edit_job_experience/js/edit_job_experience.js",
+					"edit_job_experience/css/edit_job_experience.css",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"add_job_experience/add_job_experience.html"
+				],
+				"priority": 0
+			},
+			"add_job_experience/add_job_experience.html": {
+				"resources": [
+					"public_js/mui.dtpicker.js",
+					"add_job_experience/images/logo_bottom.png",
+					"public_css/mui.dtpicker.css",
+					"add_job_experience/js/add_job_experience.js",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"add_job_experience/css/add_job_experience.css",
+					"public_js/mui.poppicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.picker.css",
+					"public_js/mui.picker.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"edit_self_evaluation/edit_self_evaluation.html": {
+				"resources": [
+					"edit_self_evaluation/images/logo_bottom.png",
+					"public_css/mui.dtpicker.css",
+					"public_js/mui.poppicker.js",
+					"public_js/mui.dtpicker.js",
+					"public_js/mui.picker.js",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css",
+					"edit_self_evaluation/js/edit_self_evaluation.js",
+					"edit_self_evaluation/css/edit_self_evaluation.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"shield_company/shield_company.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"shield_company/css/shield_company.css",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_js/mui.poppicker.js",
+					"shield_company/js/shield_company.js",
+					"public_js/mui.dtpicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"shield_company/images/logo_bottom.png",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.picker.css",
+					"public_js/mui.picker.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"company/company.html": {
+				"resources": [
+					"company/images/jianli.png",
+					"public_js/jquery.min.js",
+					"company/images/download.png",
+					"public_js/mui.min.js",
+					"company/images/shuaxinjianli.png",
+					"company/images/logo_bottom_white.png",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"company/images/logo-white.png",
+					"company/images/tab.png",
+					"company/images/download-2.png",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"company/images/toudixiang.png",
+					"public_js/bootstrap.min.js",
+					"company/images/logo.png",
+					"company/images/logo_bottom.png",
+					"company/images/sousuozhiwei.png",
+					"public_css/mui.min.css",
+					"company/js/company.js",
+					"company/images/top_bg.gif",
+					"company/css/company.css",
+					"company/images/infor.png"
+				],
+				"refer": [
+					"login/login.html",
+					"search_resume/search_resume.html",
+					"resume_management/resume_management.html",
+					"position_management/position_management.html",
+					"information_management/information_management.html"
+				],
+				"priority": 0
+			},
+			"search_resume/search_resume.html": {
+				"resources": [
+					"search_resume/js/search_resume.js",
+					"search_resume/images/top_bg.gif",
+					"search_resume/images/logo.png",
+					"search_resume/images/download.png",
+					"search_resume/images/tab.png",
+					"search_resume/css/search_resume.css",
+					"search_resume/images/logo_bottom.png",
+					"search_resume/images/on_1.png",
+					"search_resume/images/logo-white.png",
+					"public_js/jquery.min.js",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css",
+					"search_resume/images/on_2.png"
+				],
+				"refer": [
+					"shouye/shouye.html",
+					"company/company.html"
+				],
+				"priority": 0
+			},
+			"resume_management/resume_management.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"public_js/mui.poppicker.js",
+					"fonts/mui.ttf",
+					"public_js/mui.dtpicker.js",
+					"resume_management/images/logo_bottom.png",
+					"public_js/mui.picker.js",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"public_js/jquery.min.js",
+					"resume_management/css/resume_management.css",
+					"resume_management/js/resume_management.js",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"my_resume/my_resume.html",
+					"filtering_resume/filtering_resume.html",
+					"readed_resume/readed_resume.html",
+					"communicate_resume/communicate_resume.html",
+					"invited_interview/invited_interview.html",
+					"inappropriate_resume/inappropriate_resume.html",
+					"interview_success/interview_success.html"
+				],
+				"priority": 0
+			},
+			"my_resume/my_resume.html": {
+				"resources": [
+					"my_resume/images/logo_bottom.png",
+					"public_css/mui.dtpicker.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"public_css/bootstrap.min.css",
+					"public_js/mui.poppicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/mui.dtpicker.js",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.picker.css",
+					"public_js/mui.picker.js",
+					"public_css/mui.min.css",
+					"my_resume/js/my_resume.js",
+					"my_resume/css/my_resume.css",
+					"my_resume/images/tab.png"
+				],
+				"refer": [
+					"resume_preview/resume_preview.html"
+				],
+				"priority": 0
+			},
+			"filtering_resume/filtering_resume.html": {
+				"resources": [
+					"filtering_resume/js/filtering_resume.js",
+					"filtering_resume/images/logo_bottom.png",
+					"filtering_resume/css/filtering_resume.css",
+					"filtering_resume/images/tab.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"resume_preview/resume_preview.html"
+				],
+				"priority": 0
+			},
+			"readed_resume/readed_resume.html": {
+				"resources": [
+					"readed_resume/images/tab.png",
+					"readed_resume/css/readed_resume.css",
+					"readed_resume/js/readed_resume.js",
+					"readed_resume/images/logo_bottom.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"communicate_resume/communicate_resume.html": {
+				"resources": [
+					"communicate_resume/images/logo_bottom.png",
+					"communicate_resume/js/communicate_resume.js",
+					"communicate_resume/css/communicate_resume.css",
+					"communicate_resume/images/tab.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"invited_interview/invited_interview.html": {
+				"resources": [
+					"invited_interview/images/logo_bottom.png",
+					"invited_interview/css/invited_interview.css",
+					"invited_interview/images/tab.png",
+					"invited_interview/js/invited_interview.js",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"inappropriate_resume/inappropriate_resume.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"inappropriate_resume/images/logo_bottom.png",
+					"fonts/mui.ttf",
+					"inappropriate_resume/js/inappropriate_resume.js",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"inappropriate_resume/images/tab.png",
+					"inappropriate_resume/css/inappropriate_resume.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"resume_preview/resume_preview.html"
+				],
+				"priority": 0
+			},
+			"interview_success/interview_success.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"interview_success/images/tab.png",
+					"interview_success/images/logo_bottom.png",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"interview_success/js/interview_success.js",
+					"interview_success/css/interview_success.css",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"resume_preview/resume_preview.html"
+				],
+				"priority": 0
+			},
+			"position_management/position_management.html": {
+				"resources": [
+					"position_management/js/position_management.js",
+					"fonts/mui.ttf",
+					"position_management/images/logo_bottom.png",
+					"position_management/css/position_management.css",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"publish_position/publish_position.html",
+					"published_position/published_position.html",
+					"offlined_position/offlined_position.html",
+					"saved_position/saved_position.html"
+				],
+				"priority": 0
+			},
+			"publish_position/publish_position.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"publish_position/css/publish_position.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"publish_position/js/publish_position.js",
+					"publish_position/images/logo_bottom.png",
+					"font/fontawesome-webfont.woff",
+					"public_css/mui.dtpicker.css",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"public_js/city.data-3.js",
+					"public_js/mui.poppicker.js",
+					"public_js/mui.dtpicker.js",
+					"public_js/mui.picker.js"
+				],
+				"refer": [
+					"industry_category/industry_category.html",
+					"position_category/position_category.html",
+					"position_temptation/position_temptation.html",
+					"position_description/position_description.html"
+				],
+				"priority": 0
+			},
+			"industry_category/industry_category.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"fonts/mui.ttf",
+					"industry_category/images/logo_bottom.png",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"industry_category/js/industry_category.js",
+					"industry_category/css/industry_category.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"position_category/position_category.html": {
+				"resources": [
+					"position_category/images/logo_bottom.png",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"position_category/js/position_category.js",
+					"position_category/css/position_category.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"position_temptation/position_temptation.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/mui.poppicker.css",
+					"public_css/bootstrap.min.css",
+					"public_js/mui.poppicker.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/mui.dtpicker.js",
+					"public_js/bootstrap.min.js",
+					"position_temptation/images/logo_bottom.png",
+					"public_css/mui.picker.css",
+					"public_js/mui.picker.js",
+					"public_css/mui.min.css",
+					"position_temptation/css/position_temptation.css",
+					"position_temptation/js/position_temptation.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"position_description/position_description.html": {
+				"resources": [
+					"position_description/css/position_description.css",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"position_description/images/logo_bottom.png",
+					"position_description/js/position_description.js",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"published_position/published_position.html": {
+				"resources": [
+					"published_position/js/published_position.js",
+					"published_position/images/tab.png",
+					"published_position/images/logo_bottom.png",
+					"published_position/css/published_position.css",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"company/images/download-2.png",
+					"add_education_experience/images/back.png",
+					"public_js/angular.js"
+				],
+				"refer": [
+					"resume_preview/resume_preview.html",
+					"position_details/position_details.html"
+				],
+				"priority": 0
+			},
+			"offlined_position/offlined_position.html": {
+				"resources": [
+					"public_js/angular.js",
+					"offlined_position/images/tab.png",
+					"offlined_position/images/logo_bottom.png",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"offlined_position/css/offlined_position.css",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"offlined_position/js/offlined_position.js",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"position_details/position_details.html"
+				],
+				"priority": 0
+			},
+			"saved_position/saved_position.html": {
+				"resources": [
+					"saved_position/images/logo_bottom.png",
+					"public_js/angular.js",
+					"saved_position/images/tab.png",
+					"saved_position/css/saved_position.css",
+					"public_js/jquery.min.js",
+					"fonts/mui.ttf",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"saved_position/js/saved_position.js",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [
+					"position_details/position_details.html"
+				],
+				"priority": 0
+			},
+			"information_management/information_management.html": {
+				"resources": [
+					"public_css/mui.dtpicker.css",
+					"public_js/mui.poppicker.js",
+					"fonts/mui.ttf",
+					"public_js/mui.dtpicker.js",
+					"information_management/js/information_management.js",
+					"public_js/city.data-3.js",
+					"public_js/mui.picker.js",
+					"information_management/images/logo_bottom.png",
+					"public_css/mui.poppicker.css",
+					"public_css/mui.picker.css",
+					"information_management/css/information_management.css",
+					"public_js/jquery.min.js",
+					"public_js/mui.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/font-awesome.min.css",
+					"public_css/media.css",
+					"public_js/bootstrap.min.js",
+					"public_css/mui.min.css",
+					"public_js/company_nature.js"
+				],
+				"refer": [
+					"industry_category/industry_category.html",
+					"company_introduction/company_introduction.html"
+				],
+				"priority": 0
+			},
+			"company_introduction/company_introduction.html": {
+				"resources": [
+					"company_introduction/images/logo_bottom.png",
+					"company_introduction/js/company_introduction.js",
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"fonts/mui.ttf",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"company_introduction/css/company_introduction.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"cityList/cityList.html": {
+				"resources": [
+					"public_js/jquery.min.js",
+					"public_css/bootstrap.min.css",
+					"font/fontawesome-webfont.woff",
+					"public_css/media.css",
+					"public_css/font-awesome.min.css",
+					"public_js/bootstrap.min.js",
+					"public_js/mui.min.js",
+					"public_css/mui.min.css",
+					"cityList/css/cityList.css",
+					"cityList/js/cityList.js",
+					"fonts/mui.ttf",
+					"shouye/shouye.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"font/fontawesome-webfont.svg",
+				"font/fontawesome-webfont.ttf",
+				"font/FontAwesome.otf",
+				"font/fontawesome-webfont.eot"
+			]
+		}
+	}
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-职位搜索</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/job_search.css">
+</head>
+<body>
+	
+	<div id="top">
+		<div class="logo"><img src="images/logo.png" alt="秒前程LOGO"></div>
+		<a href="javascript:void(0)"><img src="images/download.png" alt=""></a>
+	</div>
+
+	<div id="function">
+		<img src="images/logo-white.png" alt="">
+		<div class="city">杭州&nbsp;<i class="icon-caret-down"></i></div>
+		<div class="login">登录/注册&nbsp;<i class="icon-file-alt"></i></div>
+	</div>
+
+	<div id="link">
+		<span class="home_page">首页</span>&nbsp;>&nbsp;<span class="active">职位搜索</span>
+	</div>
+	
+	<div id="search_group">
+		<input type="text" name="search" id="search" placeholder="请输入职位进行搜索" />
+		<button><i class="icon-search"></i></button>
+	</div>
+	
+	
+	<div id="tab">
+		<ul>
+			<li class="all_position"><span>所有职位</span></li>
+			<li class="salary_range"><span>薪资范围</span></li>
+			<li class="xueli"><span>学历</span></li>
+			<li class="more"><span>更多</span></li>
+		</ul>
+	</div>
+	
+	<!--所有职位-->
+	<div class="grade-eject">
+		<ul class="grade-w">
+			<li>所有职能</li>
+			<li>计算机硬件</li>
+			<li>计算机软件</li>
+			<li>互联网/电子商务/网游</li>
+			<li>IT-管理</li>
+			<li>IT-品管、技术支持及其它</li>
+			<li>通信技术开发及应用</li>
+			<li>电子/电器/半导体</li>
+			<li>销售管理</li>
+			<li>销售人员</li>
+			<li>销售行政及商务</li>
+			<li>客服及支持</li>
+			<li>财务/审计/税务</li>
+			<li>金融/证券/投资</li>
+			<li>银行</li>
+			<li>保险</li>
+			<li>生产/运营</li>
+			<li>质量安全</li>
+			<li>工程/机械/能源</li>
+			<li>汽车制造</li>
+		</ul>
+		<ul class="grade-t">
+			<li>所有职能</li>
+			<li>所有职能</li>
+			<li>所有职能</li>
+			<li>所有职能</li>
+			<li>所有职能</li>
+		</ul>
+		<ul class="grade-t">
+			<li>计算机硬件</li>
+			<li>高级硬件工程师</li>
+			<li>硬件工程师</li>
+			<li>其他</li>
+		</ul>
+		<ul class="grade-t">
+			<li>计算机软件</li>
+			<li>高级软件工程师</li>
+			<li>软件工程师</li>
+			<li>软件UI设计师/工程师</li>
+			<li>算法工程师</li>
+			<li>前端开发工程师</li>
+			<li>系统架构师</li>
+			<li>PHP工程师</li>
+			<li>Java工程师</li>
+			<li>Android/Ios工程师</li>
+			<li>Webapp开发工程师</li>
+			<li>数据挖掘师</li>
+		</ul>
+		<ul class="grade-t">
+			<li>互联网/电子商务/网游</li>
+			<li>语音/视频开发工程师</li>
+			<li>手机应用开发工程师</li>
+			<li>多媒体/游戏开发工程师</li>
+			<li>网站运营总监</li>
+			<li>产品经理/主管</li>
+			<li>SEO搜索引擎优化</li>
+			<li>网络推广总监</li>
+			<li>电子商务总监</li>
+			<li>Android/Ios工程师</li>
+			<li>Webapp开发工程师</li>
+			<li>数据挖掘师</li>
+		</ul>
+		<p><input type="button" value="确定" class="btn" /></p>
+	</div>
+	
+	<!--薪资范围-->
+	<div class="range">
+		<ul class="range-w">
+			<li>所有</li>
+			<li>2000元/月以下</li>
+			<li>2001-3000元/月</li>
+			<li>3001-4500元/月</li>
+			<li>4500-8000元/月</li>
+			<li>8001-10000元/月</li>
+			<li>10001-15000元/月</li>
+			<li>15001-20000元/月</li>
+			<li>20001-30000元/月</li>
+			<li>30001-50000元/月</li>
+			<li>50000元/月以上</li>
+		</ul>
+		<p><input type="button" value="确定" class="btn" /></p>
+	</div>	
+	
+	<!--学历-->
+	<div class="edu">
+		<ul class="edu-w">
+			<li>所有</li>
+			<li>初中及以下</li>
+			<li>高中/中技/中专</li>
+			<li>大专</li>
+			<li>本科</li>
+			<li>硕士</li>
+			<li>博士</li>
+		</ul>
+		<p><input type="button" value="确定" class="btn" /></p>
+	</div>
+	
+	<!--更多-->
+	<div class="more2">
+		<ul class="more-w">
+			<li>工作年限</li>
+			<li>学历要求</li>
+			<li>发布日期</li>
+			<li>工作类型</li>
+			<li>公司性质</li>
+			<li>公司规模</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有</li>
+			<li>无经验</li>
+			<li>1-3年</li>
+			<li>3-5年</li>
+			<li>5-10年</li>
+			<li>10年以上</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有</li>
+			<li>初中及以下</li>
+			<li>高中/中技/中专</li>
+			<li>大专</li>
+			<li>本科</li>
+			<li>硕士</li>
+			<li>博士</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有日期</li>
+			<li>24小时内</li>
+			<li>近3天</li>
+			<li>近一周</li>
+			<li>近一个月</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有</li>
+			<li>实习全职</li>
+			<li>实习兼职</li>
+			<li>全职</li>
+			<li>兼职</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有</li>
+			<li>外资(欧美)</li>
+			<li>外资(非欧美)</li>
+			<li>合资</li>
+			<li>国企</li>
+			<li>民营公司</li>
+			<li>外企代表处</li>
+			<li>政府机关</li>
+			<li>事业单位</li>
+			<li>非营利机构</li>
+			<li>上市公司</li>
+			<li>创业公司</li>
+		</ul>
+		<ul class="more-t">
+			<li>所有</li>
+			<li>少于50人</li>
+			<li>50-150人</li>
+			<li>150-500人</li>
+			<li>500-1000人</li>
+			<li>1000-5000人</li>
+			<li>5000-1万人</li>
+			<li>1万人以上</li>
+		</ul>
+		<p><input type="button" value="确定" class="btn" /></p>
+	</div>
+	
+	
+	<div id="hot_position">
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+		<div class="info">
+			<div class="left"><img src="images/tab.png" alt=""></div>
+			<div class="center">
+				<h3>玖幺云</h3>
+				<p>PHP工程师</p>
+				<p>12-12&nbsp;13:00</p>
+			</div>
+			<div class="right">
+				<h3>8K-15k</h3>
+			</div>
+		</div>
+	</div>
+	
+	<nav>
+	  <ul class="pagination">
+	    <li><a href="javascript:void(0)">&laquo;</a></li>
+	    <li><a href="javascript:void(0)">1</a></li>
+	    <li><a href="javascript:void(0)">2</a></li>
+	    <li><a href="javascript:void(0)">3</a></li>
+	    <li><a href="javascript:void(0)">4</a></li>
+	    <li><a href="javascript:void(0)">5</a></li>
+	    <li><a href="javascript:void(0)">&raquo;</a></li>
+	  </ul>
+	</nav>
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/job_search.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			//打开登陆窗口
+			$('.login').bind('tap',function(){
+				mui.openWindow({
+					url: '../login/login.html',
+					id: '../login/login.html',  
+					 show: {
+        				duration: 300
+    				},
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+			
+			
+			//返回首页
+			$('.home_page').bind('tap',function(){
+				mui.openWindow({
+					url: '../shouye/shouye.html',
+					id: '../shouye/shouye.html',  
+					 show: {
+        				duration: 300
+    				},
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+			
+			//打开职位详情页
+			$('#hot_position .info').bind('tap',function(){
+				mui.openWindow({
+					url: '../position_details/position_details.html',
+					id: '../position_details/position_details.html',  
+					 show: {
+        				duration: 300
+    				},
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+			
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+
+
+body{
+	background: #EFEFF4;
+	color: #333;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+	margin: 0;
+	padding: 0;
+}
+
+.mui-bar-nav{
+	background: #f7a63d;
+	color: #fff;
+}
+.mui-icon-left-nav{
+	color: #fff;
+}
+.mui-title{
+	color: #fff;
+	font-size: 1.69rem;
+}
+
+form .group{
+	margin: 0;
+}
+
+form span{
+	width: 10%;
+	height: 4.62rem;
+	line-height: 4.62rem;
+	display: block;
+	float: left;
+	color: #f7a63d;
+	font-size: 2.20rem;
+	text-align: center;
+	background: #fff;
+}
+
+form input#user_number,form input#user_pass{
+	width: 90%;
+	height: 4.62rem;
+	float: left;
+	display: block;
+	border: 0;
+	font-size: 1.54rem;
+	color: #666;
+	background: #fff;
+}
+
+form p{
+	padding: 0 5%;
+}
+
+form p em{
+	font-style: normal;
+}
+form p .reg{
+	float: left;
+	color: #333;
+	font-size: 1.38rem;
+}
+form p .forgot-password{
+	float: right;
+	color: #333;
+	font-size: 1.38rem;
+}
+
+form input#login{
+	width: 90%;
+	height: 3.85rem;
+	display: block;
+	margin: 2.31rem 5%;
+	background: #f7a63d;
+	color: #fff;
+	font-size: 1.54rem;
+	letter-spacing: 0.77rem;
+}
+form input#login:focus{
+	outline: none;
+}
+
+
+
+#footer{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	padding: 1.54rem 0;
+	position: fixed;
+	bottom: 0;
+}
+#footer img{
+	display: block;
+	width: 16.08rem;
+	height: 6.23rem;
+	margin: 0 auto 1.54rem auto;
+}
+#footer p{
+	font-size: 1.38rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

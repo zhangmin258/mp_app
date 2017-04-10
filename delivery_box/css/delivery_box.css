@@ -1,0 +1,222 @@
+
+
+
+body{
+	background: #EFEFF4;
+	color: #333;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+	margin: 0;
+	padding: 0;
+}
+
+
+.mui-bar-nav{
+	background: #f7a63d;
+	color: #fff;
+}
+.mui-icon-left-nav{
+	color: #fff;
+}
+.mui-title{
+	color: #fff;
+	font-size: 1.69rem;
+}
+
+
+#nav{
+	height: 4.62rem;
+	margin: 0 0 1.54rem 0;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 5%;
+}
+#nav li{
+	font-size: 1.54rem;
+	line-height: 4.46rem;
+	color: #333;
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#nav li:nth-of-type(1){
+	color: #f7a63d;
+	border-bottom: #f7a63d solid 2px;
+
+	
+}
+
+#hot_position{
+	margin-bottom: 2.31rem;
+	
+	
+	
+	
+}
+.hot_position{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background: #fff;
+	display: none;
+}
+
+.hot_position .info{
+	width: 100%;
+	height: 8.85rem;
+	display: block;
+	overflow: hidden;
+	padding: 1.15rem 5%;
+	border-bottom: #ccc solid 1px;
+	text-decoration: none;
+	color: #333;
+}
+.hot_position .info:last-child{
+	border: 0;
+}
+.hot_position .info:active{
+	background: #eee;
+	border-bottom: #f7a63d solid 1px;
+}
+.hot_position .left img{
+	float: left;
+	width: 7.23rem;
+	height: 6.15rem;
+	display: block;
+	border-radius: 0.77rem;
+	margin-right: 3%;
+}
+
+.hot_position .center{
+	float: left;
+	line-height: 1.5;
+}
+
+.hot_position .center p{
+	font-size: 1.38rem;
+	color: #333;
+}
+.hot_position .center p:nth-of-type(1){
+	font-size: 1.69rem;
+}
+.hot_position .right{
+	float: right;
+}
+.hot_position .right p{
+	font-size: 1.38rem;
+	color: #666;
+	line-height: 2;
+}
+.hot_position .right p:nth-of-type(2){
+	color: #f7a63d;
+}
+
+
+
+#footer{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	padding: 1.54rem 0;
+}
+#footer img{
+	display: block;
+	width: 16.08rem;
+	height: 6.23rem;
+	margin: 0 auto 1.54rem auto;
+}
+#footer p{
+	font-size: 1.38rem;
+}
+
+#fix{
+	width: 100%;
+	height: 5.38rem;
+	overflow: hidden;
+	background: rgba(250,0,0,.2);
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

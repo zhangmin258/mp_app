@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-编辑基本信息</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.dtpicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.picker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.poppicker.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/edit_basicinfor.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">编辑基本信息</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <form action="">
+
+			<a class="head_portrait" id="openSheet" href="#sheet">
+				<label>头像</label>
+				<img id="imgPhoto"/>
+				<span>上传头像，有助于让人更好的点击查看，增加真实性</span>
+				<i class="icon-angle-right"></i>
+			</a>
+			
+			<div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="javascript:void(0)" id="btnPhoto">拍照</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="javascript:void(0)" id="btnImg">相册</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell" id="cancel">
+			        <a href="#sheet1"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+			
+			<section>
+				<span>姓名</span>
+				<input type="text" placeholder="输入姓名" dir="rtl"/>
+			</section>
+			
+			<section>
+				<span>性别</span>
+				<div class="mui-row">
+				    <div class="mui-radio mui-left">
+						<label>女</label>
+						<input name="sex" type="radio" value="女">
+					</div>
+					<div class="mui-radio mui-left">
+						<label>男</label>
+						<input name="sex" type="radio"　value="男" checked>
+					</div>
+				</div>
+			</section>
+			
+			<section>
+				<span>出生年月</span>
+				<input type="text" dir="rtl" readonly="readonly" id="birthday"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section dir="rtl" style="margin-top: 1.54rem;">
+				<span>最高学历</span>
+				<select>
+					<option value="1">不限</option>
+					<option value="2">初中及以下</option>
+					<option value="3">高中/中专/中技</option>
+					<option value="4">大专</option>
+					<option value="5">本科</option>
+					<option value="6">硕士</option>
+					<option value="7">博士</option>
+				</select>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section dir="rtl">
+				<span>工作经验</span>
+				<select>
+					<option value="1">不限</option>
+					<option value="2">无经验</option>
+					<option value="3">1-3年</option>
+					<option value="4">3-5年</option>
+					<option value="5">5-10年</option>
+					<option value="6">10年以上</option>
+				</select>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>现居住城市</span>
+				<input type="text" dir="rtl" readonly="readonly" id="showCity"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>详细地址</span>
+				<input type="text" placeholder="输入详细地址" dir="rtl"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section style="margin-top: 1.54rem;">
+				<span>联系电话</span>
+				<input type="text" placeholder="输入联系电话" dir="rtl"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<section>
+				<span>邮箱地址</span>
+				<input type="text" placeholder="输入邮箱地址" dir="rtl"/>
+				<i class="icon-angle-right"></i>
+			</section>
+			
+			<input type="button" class="btn btn-warning" value="保存" id="save">
+		</form>
+	</div>
+	
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.dtpicker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.picker.js"></script>
+	<script type="text/javascript" src="../public_js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../public_js/city.data-3.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/edit_basicinfor.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		
+	</script>
+</body>
+</html>

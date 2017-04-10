@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-登录</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">登陆秒前程</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <form action="">
+			<div class="group clearfix">
+				<span><i class="icon-user"></i></span>
+				<input type="text" name="user_number" id="user_number" placeholder="请输入手机号/邮箱号">
+			</div>
+	
+			<div class="group clearfix">
+				<span><i class="icon-lock"></i></span>
+				<input type="password" name="user_pass" id="user_pass" placeholder="请输入密码">
+			</div>
+			<p class="clearfix">
+				<em class="reg">立即注册</em>
+				<em class="forgot-password">忘记密码</em>
+			</p>
+			<input type="button" class="btn btn-warning" value="登录" id="login">
+		</form>
+	</div>
+    
+	<div style="clear: both;"></div>
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../layer/layer.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			//打开页面立即注册
+			$('.reg').bind('tap',function(){
+				mui.openWindow({
+					url: '../reg/reg.html',
+					id: '../reg/reg.html',  
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+			
+			//打开页面忘记密码
+			$('.forgot-password').bind('tap',function(){
+				mui.openWindow({
+					url: '../find_password/find_password.html',
+					id: '../find_password/find_password.html',  
+				    waiting: {  
+				        autoShow: false, //自动显示等待框，默认为true    
+				    }  
+				});
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+
+
+
+body{
+	background: #f5f5f5;
+	color: #333;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+	margin: 0;
+	padding: 0;
+}
+
+
+.mui-bar-nav{
+	background: #f7a63d;
+	color: #fff;
+}
+.mui-icon-left-nav{
+	color: #fff;
+}
+.mui-title{
+	color: #fff;
+	font-size: 1.69rem;
+}
+
+
+#user_info{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 1.54rem;
+	text-align: center;
+	padding: 2.31rem 0;
+}
+#user_info img{
+	width: 9.54rem;
+	height: 9.54rem;
+	display: block;
+	margin: 0 auto 1.54rem auto;
+}
+#user_info h2{
+	color: #333;
+	font-size: 1.69rem;
+	margin-bottom: 0.77rem;
+}
+#user_info p{
+	line-height: 1.7;
+	color: #666;
+	font-size: 1.38rem;
+}
+
+#user_introduction,#job_intention,#self_evaluation,#contact{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 0.77rem;
+	padding: 1.54rem 5%;
+}
+
+#contact{
+	margin-bottom: 3.85rem;
+}
+
+#user_introduction h2,#job_intention h2,#self_evaluation h2,#contact h2{
+	color: #f7a63d;
+	font-size: 1.69rem;
+	margin-bottom: 1.15rem;
+}
+
+#user_introduction p,#job_intention p,#self_evaluation p,#contact p{
+	line-height: 2;
+	color: #777;
+	font-size: 1.54rem;
+	text-indent: 3rem;
+}
+#user_introduction p span,#job_intention p span,#self_evaluation p span{
+	color: #333;
+}
+#contact p span{
+	color: #f7a63d;
+	letter-spacing: 0.07rem;
+}
+
+#work_experience,#education_experience{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 0.77rem;
+	padding: 1.54rem 5%;
+}
+#work_experience h2,#education_experience h2{
+	color: #f7a63d;
+	font-size: 1.69rem;
+	margin-bottom:1.54rem;
+}
+#work_experience h3,#education_experience h3{
+	color: #333;
+	font-size: 1.54rem;
+	margin-bottom: 0.77rem;
+	text-indent: 3rem;
+}
+#work_experience p,#education_experience p{
+	text-indent: 0;
+	line-height: 1.5;
+	color: #333;
+	text-indent: 3rem;
+}
+#work_experience p span,#education_experience p span{
+	font-size: 1.54rem;
+	color: #666;
+}
+
+#work_experience section{
+	margin-top: 0.77rem;
+}
+#work_experience section p{
+	font-size: 1.38rem;
+	color: #999;
+	text-indent: 2em;
+	line-height: 1.5;
+}
+
+
+
+#footer{
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	padding: 1.54rem 0;
+}
+#footer img{
+	display: block;
+	width: 16.08rem;
+	height: 6.23rem;
+	margin: 0 auto 1.54rem auto;
+}
+#footer p{
+	font-size: 1.38rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

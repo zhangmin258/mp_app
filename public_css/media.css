@@ -1,0 +1,115 @@
+
+
+
+
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+	font-family:'微软雅黑',Helvetica,Arial,sans-serif;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	background: #fff;
+}
+
+ul,ol,li{
+	list-style: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+a{
+	text-decoration:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	color:#000;
+}
+
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.clearfix{
+
+    /* 触发 hasLayout */
+    zoom: 1;
+}
+
+.clearfix:after{
+    content:".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*设备兼容*/
+/*  兼容iphone 6,6s */
+@media all and (min-device-width:320px) and (max-device-width:375px){
+	html{
+	   	font-size: 11.7px !important;
+	}
+}
+
+/* 兼容iphone 6plus */
+@media all and (min-device-width:376px) and (max-device-width:414px){
+	html{
+	    font-size: 13px !important;
+	}
+}
+
+/* 兼容ipad-mini 和 ipad */
+@media all and (min-device-width:415px) and (max-device-width:768px){
+  	html{
+    	font-size: 16px !important;
+  	}	
+}
+
+@media all and (min-device-width:769px) and (max-device-width:1024px){
+  	html{
+    	font-size: 24px !important;
+  	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

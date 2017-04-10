@@ -1,0 +1,151 @@
+
+
+
+body{
+	background: #EFEFF4;
+	color: #333;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.mui-bar-nav{
+	background: #f7a63d;
+	color: #fff;
+}
+.mui-icon-left-nav{
+	color: #fff;
+}
+.mui-title{
+	color: #fff;
+	font-size: 1.69rem;
+}
+
+.mui-content>.mui-table-view:first-child{
+    margin-top: 0;
+}
+
+.mui-table-view-cell{
+    position: relative;
+    overflow: hidden;
+    padding: 1.38rem 5%;
+    -webkit-touch-callout: none;
+}
+.mui-table-view-cell .mui-navigate-right{
+	text-decoration: none;
+	font-size: 1.54rem;
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	padding: 1.54rem 0;
+	position: fixed;
+	bottom: 0;
+}
+#footer img{
+	display: block;
+	width: 16.08rem;
+	height: 6.23rem;
+	margin: 0 auto 1.54rem auto;
+}
+#footer p{
+	font-size: 1.38rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

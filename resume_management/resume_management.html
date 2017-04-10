@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta content="yes" name="apple-mobile-web-app-capable" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta content="yes" name="apple-touch-fullscreen" />
+  	<meta content="telephone=no" name="format-detection" />
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>秒前程-简历管理</title>
+	<link rel="stylesheet" type="text/css" href="../public_css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../public_css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/resume_management.css">
+</head>
+<body>
+	
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">简历管理</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <ul class="mui-table-view">
+            <li class="mui-table-view-cell my_resume">
+                <a class="mui-navigate-right">我的简历</a>  
+            </li>
+            <li class="mui-table-view-cell filtering_resume">
+                <a class="mui-navigate-right">待筛选简历</a>  
+            </li>
+            <li class="mui-table-view-cell readed_resume">
+                <a class="mui-navigate-right">已读简历</a>  
+            </li>
+            <li class="mui-table-view-cell communicate_resume">
+                <a class="mui-navigate-right">待沟通简历</a>  
+            </li>
+            <li class="mui-table-view-cell invited_interview">
+                <a class="mui-navigate-right">邀请面试</a>  
+            </li>
+            <li class="mui-table-view-cell inappropriate_resume">
+                <a class="mui-navigate-right">不合适简历</a>  
+            </li>
+            <li class="mui-table-view-cell interview_success">
+                <a class="mui-navigate-right">面试成功</a>  
+            </li>
+            
+	    </ul>
+	</div>
+	
+	
+	<div id="footer">
+		<img src="images/logo_bottom.png" alt="">
+		<p>版本所有@2012杭州揽客宝公司</p>
+		<p>浙ICP备15042525号-2</p>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/mui.min.js"></script>
+	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/resume_management.js"></script>
+	<script type="text/javascript">
+//		mui.init();
+
+		//我的简历
+		$('.my_resume').bind('tap',function(){
+			mui.openWindow({
+				url: '../my_resume/my_resume.html',
+				id: '../my_resume/my_resume.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//待筛选简历
+		$('.filtering_resume').bind('tap',function(){
+			mui.openWindow({
+				url: '../filtering_resume/filtering_resume.html',
+				id: '../filtering_resume/filtering_resume.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//已读简历
+		$('.readed_resume').bind('tap',function(){
+			mui.openWindow({
+				url: '../readed_resume/readed_resume.html',
+				id: '../readed_resume/readed_resume.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//待沟通简历
+		$('.communicate_resume').bind('tap',function(){
+			mui.openWindow({
+				url: '../communicate_resume/communicate_resume.html',
+				id: '../communicate_resume/communicate_resume.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//邀请面试
+		$('.invited_interview').bind('tap',function(){
+			mui.openWindow({
+				url: '../invited_interview/invited_interview.html',
+				id: '../invited_interview/invited_interview.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+
+		//不合适简历
+		$('.inappropriate_resume').bind('tap',function(){
+			mui.openWindow({
+				url: '../inappropriate_resume/inappropriate_resume.html',
+				id: '../inappropriate_resume/inappropriate_resume.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+		//面试成功简历
+		$('.interview_success').bind('tap',function(){
+			mui.openWindow({
+				url: '../interview_success/interview_success.html',
+				id: '../interview_success/interview_success.html',  
+				 show: {
+    				duration: 300
+				},
+			    waiting: {  
+			        autoShow: false, //自动显示等待框，默认为true    
+			    }  
+			});
+		});
+		
+	</script>
+</body>
+</html>
