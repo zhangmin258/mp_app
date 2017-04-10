@@ -17,42 +17,52 @@
 </head>
 <body>
 	
+	
 	<header class="mui-bar mui-bar-nav">
 	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 	    <h1 class="mui-title">注册秒前程</h1>
 	</header>
 	
 	<div class="mui-content">
-	    <form action="">
+	    <form action="http://site2.91miaopin.com/api/webapp/index" method="post">
 			<div class="group clearfix">
 				<span><i class="icon-mobile-phone"></i></span>
-				<input type="text" name="phone_number" id="phone_number" placeholder="请输入手机号">
+			 	<input type="text" name="telphone" id="phone_number" placeholder="请输入手机号">
 			</div>
 	                                                                                                                                                                                                                                                                                    
 			<div class="group clearfix yzm">
 				<span><i class="icon-qrcode"></i></span>
-				<input type="text" name="auth_code" id="auth_code" placeholder="请输入验证码">
+				<input type="text" name="code" id="auth_code" placeholder="请输入验证码">
 				<input type="button" class="btn" value="获取验证码" id="gain" onclick="settime(this)" />
 			</div>
 			
 			<div class="group clearfix">
 				<span><i class="icon-lock"></i></span>
-				<input type="password" name="pass" id="pass" placeholder="请输入密码">
+				<input type="password" name="password" id="pass" placeholder="请输入密码">
 			</div>
 			
 			<div class="group clearfix">
 				<span><i class="icon-lock"></i></span>
-				<input type="password" name="confirm_pass" id="confirm_pass" placeholder="请确认密码">
+				<input type="password" name="rpassword" id="confirm_pass" placeholder="请确认密码">
 			</div>
 			
-			<p class="clearfix">
-				<button type="button">个人求职</button>
-				<button type="button">企业招聘</button>
-			</p>
-			<input type="button" class="btn btn-warning" value="注册" id="reg">
+			<div class="clearfix">
+				<div class="role role1">
+				  	<label><input type="radio" name="role" value="user" checked>个人求职</label>
+				</div>
+				<div class="role role2">
+				  	<label><input type="radio" name="role" value="company">企业招聘</label>
+				</div>
+			</div>
+
+			<input type="submit" class="btn btn-warning" value="注册" id="reg">
 			<p class="ps">注册即视为同意<<<a href="javascript:void(0)">秒前程用户协议</a>>></p>
 		</form>
 	</div>
+
+	
+
+
 
 	<div style="clear: both; height: 3.41rem;"></div>
 	<div id="footer">
@@ -63,6 +73,9 @@
 
 
 	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/jquery.md5.js"></script>
+	<script type="text/javascript" src="../public_js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../public_js/jquery-form.js"></script>
 	<script type="text/javascript" src="../public_js/mui.min.js"></script>
 	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../layer/layer.js"></script>

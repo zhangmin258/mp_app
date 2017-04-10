@@ -28,7 +28,8 @@ h1,h2,h3,h4,h5,h6,ul,ol,p{
 
 
 form .group{
-	margin: 0;
+	margin: 0 0 1.15rem 0;
+	padding: 0;
 }
 
 form span{
@@ -41,6 +42,13 @@ form span{
 	font-size: 2.20rem;
 	text-align: center;
 	background: #fff;
+}
+
+form label.error{
+	font-size: 1.08rem;
+	color: maroon;
+	line-height: 0;
+	padding-left: 10%;
 }
 
 form .yzm{
@@ -59,6 +67,7 @@ form input#phone_number,form input#auth_code,form input#pass,form input#confirm_
 	font-size: 1.54rem;
 	color: #666;
 	background: #fff;
+	margin: 0;
 }
 
 form input#gain{
@@ -81,33 +90,40 @@ form input#gain{
 	border: 0;
 }
 
-form p button:nth-child(1){
-	display: block;
-	width: 40%;
+form .role{
+	width: 30%;
 	height: 3.85rem;
-	float: left;
-	color: #fff;
-	font-size: 1.38rem;
-	background: #f7a63d;
-	border: none;
-	border-radius: 0.77rem;
-}
-form p button:nth-child(2){
 	display: block;
-	width: 40%;
-	height: 3.85rem;
-	float: right;
+	margin-bottom: 1.54rem;
 	color: #333;
-	font-size: 1.38rem;
-	letter-spacing: 0.38rem;
 	background: #e3eaea;
-	border: none;
 	border-radius: 0.77rem;
 }
-form p button:focus{
-	outline: none;
+form .role input[type=radio]{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+form .role label{
+	width: 100%;
+	height: 3.85rem;
+	display: block;
+	line-height: 3.85rem;
+	padding-left: 10%;
+	/*text-align: center;*/
+	font-weight: normal;
+	font-size: 1.38rem;
 }
 
+form .role1{
+	float: left;
+	margin-left: 10%;
+	color: #fff;
+	background: #f7a63d;
+}
+form .role2{
+	float: right;
+	margin-right: 10%;
+}
 form input#reg{
 	width: 90%;
 	height: 3.85rem;
@@ -117,6 +133,7 @@ form input#reg{
 	color: #fff;
 	font-size: 1.54rem;
 	letter-spacing: 0.77rem;
+	border: #ccc solid 1px;
 }
 form input#reg:focus{
 	outline: none;

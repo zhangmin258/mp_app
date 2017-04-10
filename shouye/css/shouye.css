@@ -63,6 +63,18 @@ h1,h2,h3,h4,h5,h6,ul,ol,p{
 	text-decoration: none;
 }
 
+#function .user{
+	float: right;
+	color: #fff;
+	font-size: 1.38rem;
+}
+
+#function .user a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.38rem;
+}
+
 #nav{
 	padding: 1.15rem;
 	background: #fff;

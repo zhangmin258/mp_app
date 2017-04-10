@@ -23,21 +23,21 @@
 	</header>
 	
 	<div class="mui-content">
-	    <form action="">
+	    <form action="http://site2.91miaopin.com/api/webapp/index" method="post">
 			<div class="group clearfix">
 				<span><i class="icon-user"></i></span>
-				<input type="text" name="user_number" id="user_number" placeholder="请输入手机号/邮箱号">
+				<input type="text" name="name" id="user_number" placeholder="请输入手机号/邮箱">
 			</div>
 	
 			<div class="group clearfix">
 				<span><i class="icon-lock"></i></span>
-				<input type="password" name="user_pass" id="user_pass" placeholder="请输入密码">
+				<input type="password" name="password" id="user_pass" placeholder="请输入密码">
 			</div>
 			<p class="clearfix">
 				<em class="reg">立即注册</em>
 				<em class="forgot-password">忘记密码</em>
 			</p>
-			<input type="button" class="btn btn-warning" value="登录" id="login">
+			<input type="submit" class="btn btn-warning" value="登录" id="login">
 		</form>
 	</div>
     
@@ -52,6 +52,10 @@
 
 
 	<script type="text/javascript" src="../public_js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public_js/jquery.md5.js"></script>
+	<script type="text/javascript" src="../public_js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../public_js/jquery-form.js"></script>
+	<script type="text/javascript" src="../public_js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../public_js/mui.min.js"></script>
 	<script type="text/javascript" src="../public_js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../layer/layer.js"></script>

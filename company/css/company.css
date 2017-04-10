@@ -53,12 +53,25 @@ h1,h2,h3,h4,h5,h6,ul,ol,p{
 	color: #fff;
 	font-size: 1.38rem;
 	cursor: pointer;
+	text-decoration: none;
 }
 #function .login{
 	float: right;
 	color: #fff;
 	font-size: 1.38rem;
 	text-decoration: none;
+}
+
+#function .company{
+	float: right;
+	color: #fff;
+	font-size: 1.38rem;
+}
+
+#function .company a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.38rem;
 }
 
 #nav{
